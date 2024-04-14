@@ -4,6 +4,8 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { NAVLINKS } from "@/utils/constant";
+import image from "@/QRify.png";
+import Image from "next/image";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
@@ -17,11 +19,7 @@ const Navbar = () => {
         <div className='flex lg:flex-1'>
           <a href='#' className='-m-1.5 p-1.5'>
             <span className='sr-only'>Qrify</span>
-            <img
-              className='h-8 w-auto'
-              src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
-              alt=''
-            />
+            <Image className='h-8 w-auto' src={image} alt='text' />
           </a>
         </div>
         <div className='flex lg:hidden'>

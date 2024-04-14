@@ -1,5 +1,7 @@
 import Navbar from "@/components/navbar/Navbar";
+import Image from "next/image";
 import { useState } from "react";
+import image from "../qr.png";
 
 export default function Example() {
   return (
@@ -19,10 +21,13 @@ export default function Example() {
             }}
           />
         </div>
-        <div className='mx-auto max-w-2xl py-32 sm:py-48 lg:py-56'>
+        <div className='absolute rotate-12 bottom-20 -left-12'>
+          <Image src={image} height={350} width={350} alt='tect' />
+        </div>
+        <div className='mx-auto max-w-2xl py-20 sm:py-28 lg:py-36'>
           <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
             <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
-              Announcing your our newletter.{" "}
+              Announcing our newletter.{" "}
               <a href='#' className='font-semibold text-indigo-600'>
                 <span className='absolute inset-0' aria-hidden='true' />
                 Read more <span aria-hidden='true'>&rarr;</span>
@@ -31,12 +36,11 @@ export default function Example() {
           </div>
           <div className='text-center'>
             <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-              QRify your event with us
+              QRify the event with us
             </h1>
             <p className='mt-6 text-lg leading-8 text-gray-600'>
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              Transforming events with hassle-free ticketing solutions, ensuring
+              every attendee's experience is unforgettable.
             </p>
             <div className='mt-10 flex items-center justify-center gap-x-6'>
               <a
@@ -66,6 +70,12 @@ export default function Example() {
                 "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
             }}
           />
+        </div>
+        <div className='absolute -rotate-12 bottom-20 -right-12'>
+          <Image src={image} height={150} width={150} alt='tect' />
+        </div>
+        <div className='absolute  -bottom-48 right-96 blur-sm'>
+          <Image src={image} height={250} width={250} alt='tect' />
         </div>
       </div>
     </div>
