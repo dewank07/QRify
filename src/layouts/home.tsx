@@ -1,15 +1,10 @@
-import Navbar from "@/components/navbar/navbar";
+import Navbar from "@/components/navbar/Navbar";
 import { useState } from "react";
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
-
   return (
     <div className='bg-white'>
-      <Navbar
-        setMobileMenuOpen={setMobileMenuOpen}
-        mobileMenuOpen={mobileMenuOpen}
-      />
+      <Navbar />
       <div className='relative isolate px-6 pt-14 lg:px-8'>
         {/* gradient blob */}
         <div

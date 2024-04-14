@@ -1,11 +1,13 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { NAVLINKS } from "@/utils/constant";
 
-const Navbar = ({ setMobileMenuOpen, mobileMenuOpen }) => {
+const Navbar = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+
   return (
     <header className='absolute inset-x-0 top-0 z-50'>
       <nav
