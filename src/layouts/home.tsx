@@ -40,7 +40,7 @@ export default function Example() {
             </h1>
             <p className='mt-6 text-lg leading-8 text-gray-600'>
               Transforming events with hassle-free ticketing solutions, ensuring
-              every attendee's experience is unforgettable.
+              every attendee&apos;s experience is unforgettable.
             </p>
             <div className='mt-10 flex items-center justify-center gap-x-6'>
               <a
