@@ -21,7 +21,7 @@ export default function Example() {
             }}
           />
         </div>
-        <div className='absolute rotate-12 bottom-20 -left-12'>
+        <div className='hidden  md:block absolute rotate-12 bottom-20 -left-12'>
           <Image src={image} height={350} width={350} alt='tect' />
         </div>
         <div className='mx-auto max-w-2xl py-20 sm:py-28 lg:py-36'>
@@ -71,10 +71,10 @@ export default function Example() {
             }}
           />
         </div>
-        <div className='absolute -rotate-12 bottom-20 -right-12'>
+        <div className='absolute hidden  md:block -rotate-12 bottom-20 -right-12'>
           <Image src={image} height={150} width={150} alt='tect' />
         </div>
-        <div className='absolute  -bottom-48 right-96 blur-sm'>
+        <div className='absolute hidden  md:block  -bottom-48 right-96 blur-sm'>
           <Image src={image} height={250} width={250} alt='tect' />
         </div>
       </div>
